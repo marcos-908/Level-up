@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0b0e"><title>LEVEL UP — Sua evolução começa agora</title>
+<link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+<div id="app">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#inicio" data-route="inicio"><span class="brand-mark">L<span>+</span></span><span>LEVEL<span class="red">UP</span><small>PLAYER SYSTEM</small></span></a>
+    <div class="player-mini"><div class="avatar">◆</div><div><b id="side-name">Visitante</b><small id="side-level">Modo demonstração local</small></div></div>
+    <nav id="nav">
+      <p class="nav-label">JOGADOR</p>
+      <a href="#inicio" data-route="inicio" class="active"><span>⌂</span> Início</a>
+      <a href="#tarefas" data-route="tarefas"><span>☑</span> Tarefas</a>
+      <a href="#calendario" data-route="calendario"><span>▦</span> Calendário</a>
+      <p class="nav-label">HABILIDADES</p>
+      <a href="#ingles" data-route="ingles"><span>文</span> Inglês</a>
+      <a href="#fisico" data-route="fisico"><span>✦</span> Atividade física</a>
+      <a href="#estudos" data-route="estudos"><span>⌘</span> Programação e estudos</a>
+      <a href="#habitos" data-route="habitos"><span>↻</span> Hábitos e rotina</a>
+      <p class="nav-label">PROGRESSÃO</p>
+      <a href="#evolucao" data-route="evolucao"><span>▥</span> Minha evolução</a>
+      <a href="#missoes" data-route="missoes"><span>⚑</span> Missões</a>
+      <a href="#conquistas" data-route="conquistas"><span>♜</span> Conquistas</a>
+      <a href="#recompensas" data-route="recompensas"><span>✧</span> Recompensas</a>
+      <p class="nav-label">SISTEMA</p>
+      <a href="#perfil" data-route="perfil"><span>◉</span> Perfil</a>
+      <a href="#configuracoes" data-route="configuracoes"><span>⚙</span> Configurações</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="connection-dot" id="connection-dot"></div><span id="connection-label">Pronto para começar</span><button class="icon-button" id="sidebar-collapse" title="Recolher menu">‹</button></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><button class="icon-button mobile-menu" id="mobile-menu" aria-label="Abrir menu">☰</button><div class="breadcrumb"><span>LEVEL UP</span><b>/</b><strong id="page-title">Início</strong></div><div class="top-actions"><button class="icon-button" id="sound-toggle" title="Alternar sons">♫</button><button class="icon-button" id="notification-toggle" title="Notificações">♧<i id="notice-dot"></i></button><button class="btn btn-outline" id="auth-button">Entrar <span>↗</span></button><button class="user-chip hidden" id="user-chip"><span class="avatar small">◆</span><span id="top-name">Jogador</span>⌄</button></div></header>
+    <div class="content" id="view"></div>
+    <footer>LEVEL UP <span>•</span> Construa consistência, um passo por vez.</footer>
+  </main>
+</div>
+<div class="toast-stack" id="toasts" aria-live="polite"></div>
+<div class="modal-backdrop hidden" id="modal-backdrop"><section class="modal" id="modal" role="dialog" aria-modal="true"><button class="modal-close" id="modal-close" aria-label="Fechar">×</button><div id="modal-content"></div></section></div>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>
