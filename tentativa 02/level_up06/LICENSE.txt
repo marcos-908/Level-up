@@ -1,0 +1,1 @@
+LEVEL UP project starter. Use and modify for personal learning. Dependencies are loaded from the official Supabase JS CDN; review licenses of any future dependencies you add.
